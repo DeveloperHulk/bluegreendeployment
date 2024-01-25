@@ -1,4 +1,4 @@
 #!/bin/bash
 
-sudo cd /var/www/html/
-sudo rm -rf index.html
+sudo systemctl stop httpd
+sudo rm -rf /var/www/html/*
