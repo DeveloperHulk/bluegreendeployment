@@ -1,3 +1,4 @@
 #!/bin/bash
 
-sudo yum update -y
+sudo cd /var/www/html/
+sudo rm -rf index.html
