@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+    - echo Installing node version manager (nvm)
+    - sudo apt-get update -y
+    - sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+    - sudo . ~/.nvm/nvm.sh
+    - sudo nvm install node -y
+  build:
+    commands:
+    - echo Build started on 'date'
+    - sudo npm install
+    - sudo npm start
+
+artifacts:
+  files:
+  - '**/*'
